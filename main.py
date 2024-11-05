@@ -1,6 +1,8 @@
 from utils_text_mining import text_mining
 import importlib
 importlib.reload(text_mining)
+import warnings
+warnings.filterwarnings('ignore', category=FutureWarning)  # FutureWarningを無視
 
 # 除外する単語の指定
 stopwords = ["する", "ある", "あと", "いる", "いう", "なる", "思う", "言う", "できる"]
